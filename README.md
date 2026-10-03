@@ -43,26 +43,4 @@ reports.h / reports.c - Reports module, which reads data from the other four mod
 
 Makefile - Build script used to compile the project.
 
-Compilation Instructions
-
-Using the Makefile:
-
-make
-
-Or compiling manually with GCC:
-
-gcc -Wall -Wextra -std=c99 -g -o mfms main.c employees.c budget.c suppliers.c assets.c reports.c utils.c
-
-How to Run
-
-./mfms
-
-On Windows:
-
-mfms.exe
-
-Follow the on-screen menu to navigate between modules. Select option 6 from the main menu to exit the program.
-
-Contribution Guidelines
-
 Each team member contributed to a different module of the project, including algorithm design, coding, testing and documentation. Further details about individual contributions can be found in the project's Individual Contribution Record.-
