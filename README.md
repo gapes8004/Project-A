@@ -1,96 +1,106 @@
-# Project-A
-Municipal Financial Management System 
+Municipal Financial Management System (MFMS)
 
-Collaborators
+Group members
 
-Iipinge Gabriel 224020455
+1. Kandume Jona 220106657
 
-Kandume Jona 220106657
+2. Abigail Angula 224020633
 
-Mutilifa Lovisa 220049386
+3. Mutilifa Lovisa 220049386
 
-Project Overview
+4. Victor Shikomba 201022303
 
-This project is a Municipal Financial Management System (MFMS) designed for a Namibian municipality. The system is a menu-driven command-line application built using arrays, strings and functions in ANSI C, offering the following features:
+5. Gisela Shigwedha 222130520
 
-Employee Management: Adds, displays and searches employee records, and calculates gross salary from basic pay plus allowances.
+6. Iipinge Gabriel 224020455
 
-Budget Management: Records departmental budgets and expenditure, calculates remaining balance, and flags departments that have exceeded their allocation.
+7. 
 
-Supplier Management: Adds, displays and searches municipal supplier records including contact details and location.
+Project Description
 
-Asset Management: Maintains a register of municipal assets such as vehicles, computers, buildings and equipment, with search and display functionality.
+The MFMS is a menu-driven C application that manages employees, budgets, suppliers and assets for a
+municipality, with built-in reporting and input validation.
 
-Reports: Generates summary reports for employees, budgets, suppliers and assets, including totals, averages and departments over budget.
+System Features
 
-Repository Structure
+● Employee Management — add, display, and search employees (by ID or name), and automatically
+calculate gross salary (basic salary + housing allowance + transport allowance).
 
-The project is divided into the following modules:
+● Budget Management — record each department's allocated budget and expenditure, calculate the
+remaining balance, flag departments as WITHIN BUDGET or EXCEEDED BUDGET, and list every
+department that has overspent.
 
-main.c - Entry point of the program. Owns the data arrays and displays the main menu.
+● Supplier Management — add, display, and search municipal suppliers (ID, name, email, phone, town).
 
-common.h - Shared constants used across all modules.
+● Asset Management — maintain a basic register of municipal assets (vehicles, computers, buildings,
+equipment, furniture), with search and display functionality.
 
-utils.h / utils.c - Shared input validation functions for integers, decimals and strings.
+● Reports — generate an employee report (total/average/highest/lowest salary), a budget report (totals and
+departments over budget), a supplier report, and an asset report (count and total value).
 
-employees.h / employees.c - Employee Management module.
-
-budget.h / budget.c - Budget Management module.
-
-suppliers.h / suppliers.c - Supplier Management module.
-
-assets.h / assets.c - Asset Management module.
-
-reports.h / reports.c - Reports module, which reads data from the other four modules.
-
-Makefile - Build script used to compile the project.
-
-Each team member contributed to a different module of the project, including algorithm design, coding, testing and documentation. Further details about individual contributions can be found in the project's Individual Contribution Record.
-
-Municipal Financial Management System
-
-Collaborators
-
-Iipinge Gabriel 224020455
-
-Kandume Jona 220106657
-
-Mutilifa Lovisa 220049386
-
-Project Overview
-
-This project is a Municipal Financial Management System (MFMS) designed for a Namibian municipality. The system is a menu-driven command-line application built using arrays, strings and functions in ANSI C, offering the following features:
-
-Employee Management: Adds, displays and searches employee records, and calculates gross salary from basic pay plus allowances.
-
-Budget Management: Records departmental budgets and expenditure, calculates remaining balance, and flags departments that have exceeded their allocation.
-
-Supplier Management: Adds, displays and searches municipal supplier records including contact details and location.
-
-Asset Management: Maintains a register of municipal assets such as vehicles, computers, buildings and equipment, with search and display functionality.
-
-Reports: Generates summary reports for employees, budgets, suppliers and assets, including totals, averages and departments over budget.
+● Input Validation — negative salaries, negative budgets, empty names, non-numeric input, and invalid menu
+choices are all rejected and re-prompted rather than crashing the program.
 
 Repository Structure
 
-The project is divided into the following modules:
+MFMS/
 
-main.c - Entry point of the program. Owns the data arrays and displays the main menu.
+main.c Entry point: owns the data arrays, shows the
+ main menu, dispatches to each module
 
-common.h - Shared constants used across all modules.
+common.h -Shared constants used across all modules
 
-utils.h / utils.c - Shared input validation functions for integers, decimals and strings.
+utils.h / utils.c -Shared input-validation functions
 
-employees.h / employees.c - Employee Management module.
+employees.h / employees.c -Employee Management module
 
-budget.h / budget.c - Budget Management module.
+budget.h / budget.c -Budget Management module
 
-suppliers.h / suppliers.c - Supplier Management module.
+suppliers.h / suppliers.c -Supplier Management module
 
-assets.h / assets.c - Asset Management module.
+assets.h / assets.c Asset -Management module
 
-reports.h / reports.c - Reports module, which reads data from the other four modules.
+reports.h / reports.c -Reports module
 
-Makefile - Build script used to compile the project.
+Makefile -Build script
 
-Each team member contributed to a different module of the project, including algorithm design, coding, testing and documentation. Further details about individual contributions can be found in the project's Individual Contribution Record.
+.gitignore
+
+README.md
+
+Compilation Instructions
+
+1: Using the Makefile as it was recommended "make"
+
+This compiles every source file and produces an executable called mfms (or mfms.exe on Window )
+
+2: Manual compilation with GCC
+
+gcc -Wall -Wextra -std=c99 -g -o mfms main.c employees.c budget.c \
+ suppliers.c assets.c reports.c utils.c
+
+Cleaning build files
+
+make clean
+
+How to Run the System
+
+.\mfms.exe
+
+Each option opens that module's own submenu. Select option 6 from the main menu to exit the program
+
+Individual Responsibilities
+
+Jona  -Employee Management >employees.h, employees.c
+
+Lovisa -Budget Management >budget.h, budget.c
+
+Gisela -Supplier Management >suppliers.h, suppliers.c
+
+Abigail -Asset Management >assets.h, assets.c
+
+Victor -Reports >reports.h, reports.c
+
+ Functions, integration & validation >main.c, utils.h, utils.c
+
+Gabriel -Testing, documentation & Git coordination >README.md, overall testing
