@@ -1,5 +1,5 @@
 # Project-A
-Municipal Financial Management System - Group Project
+Municipal Financial Management System 
 
 Collaborators
 
