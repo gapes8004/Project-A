@@ -7,6 +7,8 @@ Iipinge Gabriel 224020455
 
 Kandume Jona 220106657
 
+Mutilifa Lovisa 220049386
+
 Project Overview
 
 This project is a Municipal Financial Management System (MFMS) designed for a Namibian municipality. The system is a menu-driven command-line application built using arrays, strings and functions in ANSI C, offering the following features:
@@ -43,4 +45,4 @@ reports.h / reports.c - Reports module, which reads data from the other four mod
 
 Makefile - Build script used to compile the project.
 
-Each team member contributed to a different module of the project, including algorithm design, coding, testing and documentation. Further details about individual contributions can be found in the project's Individual Contribution Record.-
+Each team member contributed to a different module of the project, including algorithm design, coding, testing and documentation. Further details about individual contributions can be found in the project's Individual Contribution Record.
