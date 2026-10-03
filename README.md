@@ -2,8 +2,11 @@
 Municipal Financial Management System - Group Project
 
 Collaborators
+
 Iipinge Gabriel 224020455
+
 Kandume Jona 220106657
+
 Project Overview
 
 This project is a Municipal Financial Management System (MFMS) designed for a Namibian municipality. The system is a menu-driven command-line application built using arrays, strings and functions in ANSI C, offering the following features:
