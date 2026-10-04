@@ -14,7 +14,6 @@ Group members
 
 6. Iipinge Gabriel 224020455
 
-7. 
 
 Project Description
 
@@ -101,6 +100,6 @@ Abigail -Asset Management >assets.h, assets.c
 
 Victor -Reports >reports.h, reports.c
 
- Functions, integration & validation >main.c, utils.h, utils.c
+ Gabriel -Functions, integration & validation >main.c, utils.h, utils.c
 
 Gabriel -Testing, documentation & Git coordination >README.md, overall testing
