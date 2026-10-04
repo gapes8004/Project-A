@@ -14,6 +14,8 @@ Group members
 
 6. Iipinge Gabriel 224020455
 
+7. Kapembe Petrus 224009818
+
 
 Project Description
 
@@ -102,4 +104,4 @@ Victor -Reports >reports.h, reports.c
 
  Gabriel -Functions, integration & validation >main.c, utils.h, utils.c
 
-Gabriel -Testing, documentation & Git coordination >README.md, overall testing
+Petrus -Testing, documentation & Git coordination >README.md, overall testing
